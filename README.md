@@ -56,7 +56,7 @@ you can describe it like this:
 st(field(column1,map(string,string)))
 ```
 
-st is also support nesting:
+st also supports nesting:
 
 ```sql
 st(field(column1,map(string,array(st(field(columnx,string))))))
