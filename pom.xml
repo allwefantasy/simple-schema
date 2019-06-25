@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.mlsql</groupId>
-    <artifactId>simple-schema</artifactId>
+    <artifactId>simple-schema_2.11</artifactId>
     <version>0.1.0</version>
     <name>Simple Schema</name>
     <url>https://github.com/allwefantasy/simple-schema.git</url>
@@ -142,7 +142,7 @@
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
-        
+
     </dependencies>
 
     <profiles>
