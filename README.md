@@ -15,7 +15,7 @@ You can link against this library in your program at the following coordinates:
 ```sql
 groupId: tech.mlsql
 artifactId: simple-schema_2.11
-version: 0.1.0
+version: 0.2.0
 ```
 
 ## Usage

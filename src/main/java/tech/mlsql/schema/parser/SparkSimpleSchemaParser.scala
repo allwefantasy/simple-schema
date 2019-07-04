@@ -85,7 +85,20 @@ object SparkSimpleSchemaParser {
   }
 
   def parse(str: String) = {
-    toStructType(toInnerStructType(str).asInstanceOf[WowStructType])
+    toInnerStructType(str) match {
+      case s: WowStructType => toStructType(s)
+      case s: DataType =>
+        val buf = new ArrayBuffer[StructField]()
+        buf += StructField("value", s)
+        toStructType(WowStructType(buf)).head.dataType
+    }
+  }
+
+  def parseRaw(str: String): DataType = {
+    toInnerStructType(str) match {
+      case s: WowStructType => toStructType(s)
+      case s: DataType => StructType(Seq(StructField("value", s)))
+    }
   }
 
   private def toStructType(wowStructType: WowStructType): StructType = {

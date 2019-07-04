@@ -6,7 +6,7 @@
 
     <groupId>tech.mlsql</groupId>
     <artifactId>simple-schema_2.11</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <name>Simple Schema</name>
     <url>https://github.com/allwefantasy/simple-schema.git</url>
     <description>
