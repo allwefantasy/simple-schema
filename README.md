@@ -32,17 +32,20 @@ st means StructType, filed means StructField,the first value in field is columnN
 For now, simple schema supports type like following:
 
 1. st
-1. field
-1. string
-1. float
-1. double
-1. integer
-1. short
-1. date
-1. binary
-1. map
-1. array
- 
+2. field
+3. string
+4. float
+5. double
+6. integer
+7. short
+8. date
+9. binary
+10. map
+11. array
+12. long 
+13. boolean
+14. byte
+15. decimal
 
 Suppose you have a json data:
 
